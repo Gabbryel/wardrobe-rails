@@ -125,6 +125,13 @@
         <img class="max-h-12 w-full object-contain object-left" src="https://tailwindcss.com/plus-assets/img/logos/statamic-logo-gray-900.svg" alt="Statamic" width="147" height="48">
       </div>
     </div>
+    <div class="mx-auto lg:mx-0 lg:max-w-none bg-white py-24 sm:py-32">
+      <p class="text-justify">
+        <% Venue.all.each do |v| %>
+          <span class="text-2xl"> ・<%= v.name %> </span>
+        <% end %>
+      </p>
+    </div>
   </div>
 </div>
 
